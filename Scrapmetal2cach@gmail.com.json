@@ -1,0 +1,39 @@
+{
+  "name": "projects/rich-tome-447907-i2/alertPolicies/7537160033066338209",
+  "displayName": "Scrapmetal2cach@gmail.com",
+  "documentation": {
+    "content": "Rehacked the hacker",
+    "mimeType": "text/markdown"
+  },
+  "userLabels": {},
+  "conditions": [
+    {
+      "name": "projects/rich-tome-447907-i2/alertPolicies/7537160033066338209/conditions/7537160033066336918",
+      "displayName": "Log match condition",
+      "conditionMatchedLog": {
+        "filter": "resource.type=\"audited_resource\"\nresource.labels.project_id=\"rich-tome-447907-i2\"\nresource.labels.method=\"google.longrunning.Operations.GetOperation\"\nresource.labels.service=\"serviceusage.googleapis.com\""
+      }
+    }
+  ],
+  "alertStrategy": {
+    "notificationRateLimit": {
+      "period": "3600s"
+    },
+    "autoClose": "604800s",
+    "notificationPrompts": [
+      "OPENED"
+    ]
+  },
+  "combiner": "OR",
+  "enabled": true,
+  "notificationChannels": [],
+  "creationRecord": {
+    "mutateTime": "2025-01-15T17:36:32.800337392Z",
+    "mutatedBy": "scrapmetal2cash@gmail.com"
+  },
+  "mutationRecord": {
+    "mutateTime": "2025-01-15T18:52:08.354609001Z",
+    "mutatedBy": "scrapmetal2cash@gmail.com"
+  },
+  "severity": "WARNING"
+}
